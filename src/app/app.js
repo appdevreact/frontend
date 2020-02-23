@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import StudentContainer from "./components/student/StudentContainer";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import EmployeeContainer from "./components/student/EmployeeContainer";
 
 import "./App.css";
 
 export const App = () => {
   return (
     <div>
-      <StudentContainer />
+      <EmployeeContainer />
     </div>
   );
 };
