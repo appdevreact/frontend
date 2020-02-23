@@ -1,5 +1,5 @@
 
-cldsexport function post(resourcePath) { 
+export function post(resourcePath) { 
   const url = resourcePath;
   const settings = {
    
