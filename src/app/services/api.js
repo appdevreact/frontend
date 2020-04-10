@@ -40,8 +40,7 @@ export const fetchCommon = (
     console.log(">>>>>>>>>JSONDATA>>>>>", jsonData);
     return response;
   } catch (error) {
-    // handle error object
-
+ 
     return "";
   }
 };

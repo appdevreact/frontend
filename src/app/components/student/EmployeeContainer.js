@@ -29,7 +29,7 @@ export class EmployeeContainer extends Component {
       {data.map(input => (
         <tr>
   
-  <td>{input.id}</td>
+  <td colSpan="2">{input.id}</td>
   <td>{input.employee_name}</td>
   <td>{input.employee_salary}</td>
   <td>{input.employee_age}</td>
