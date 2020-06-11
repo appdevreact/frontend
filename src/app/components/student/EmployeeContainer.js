@@ -9,7 +9,7 @@ export class EmployeeContainer extends Component {
 
   render() {
     const { data } = this.props;
-   
+   console.log('>>>>>>>>.data>>>>>>>',data)
     return(
       <div>
 <h1 style={{marginLeft:'500px'}}>Employee Management System</h1><br/>
@@ -29,14 +29,12 @@ export class EmployeeContainer extends Component {
       {data.map(input => (
         <tr>
   
-  <td colSpan="2">{input.id}</td>
+  <td >{input.id}</td>
   <td>{input.employee_name}</td>
   <td>{input.employee_salary}</td>
   <td>{input.employee_age}</td>
-  <td>{input.profile_image}</td>
-    
- 
-        </tr>
+  <td>{input.profile_images}</td>  
+         </tr>
          ))}
         </tbody>    }    
         </Table>
