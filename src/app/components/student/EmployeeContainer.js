@@ -1,26 +1,36 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { renderSteps } from "./employee-actions";
-import { Table } from "reactstrap";
+import { Table } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 export class EmployeeContainer extends Component {
   componentDidMount() {
     this.props.renderSteps();
   }
-klklklkl
+
   render() {
     const { data } = this.props;
 
     return (
       <div>
-        <h1 style={{ marginLeft: "500px" }}>Employee Management System</h1>
+        <h1 style={{ marginLeft: "500px" }}>
+          {" "}
+          <FormattedMessage id="employee-management-system" />
+        </h1>
         <br />
         <Table dark style={{ width: "100px" }}>
           <thead>
             <tr>
               <th>ID</th>
-              <th>EmployeeName</th>
-              <th>EmployeeSalary</th>
-              <th>EmployeeAge</th>
+              <th>
+                <FormattedMessage id="employee-name" />
+              </th>
+              <th>
+                <FormattedMessage id="employee-salary" />
+              </th>
+              <th>
+                <FormattedMessage id="employee-age" />
+              </th>
               <th>ProfileImage</th>
             </tr>
           </thead>
@@ -38,6 +48,7 @@ klklklkl
             </tbody>
           )}
         </Table>
+        {/* <Button>Test Data</Button> */}
       </div>
     );
   }
