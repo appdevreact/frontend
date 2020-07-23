@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { renderSteps } from "./employee-actions";
+import { renderSteps } from "../../actions/actions.js";
 import { Table } from "react-bootstrap";
 import { FormattedMessage } from "react-intl";
 export class EmployeeContainer extends Component {
@@ -10,7 +10,7 @@ export class EmployeeContainer extends Component {
 
   render() {
     const { data } = this.props;
-dada
+
     return (
       <div>
         <h1 style={{ marginLeft: "500px" }}>

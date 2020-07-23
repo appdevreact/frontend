@@ -1,11 +1,19 @@
-import React from 'react';
-
-import { shallow } from 'enzyme'
-import EmployeeContainer from "../EmployeeContainer"
-describe("Test EmployeeContainer", () => {
-  it("should render my component", () => {
-    expect(shallow(<EmployeeContainer></EmployeeContainer>).toMatchSnapshot());  
- 
-  });
-
-}); 
+import React from "react";
+import { shallow } from "enzyme";
+import { Provider } from "react-redux";
+import configureMockStore from "redux-mock-store";
+import EmployeeContainer from "../EmployeeContainer";
+const mockStore = configureMockStore();
+const store = mockStore({});
+describe("Test EmployeeContainer data", () => {
+  let wrapper, props;
+  props = {
+    renderSteps: jest.fn(),
+  };
+  wrapper = shallow(
+    <Provider store={store}>
+      <EmployeeContainer {...props} />
+    </Provider>
+  );
+  it("should render without throwing an error", () => {});
+});
