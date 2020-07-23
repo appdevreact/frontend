@@ -7,7 +7,7 @@ export class EmployeeContainer extends Component {
   componentDidMount() {
     this.props.renderSteps();
   }
-adada
+
   render() {
     const { data } = this.props;
 dada
