@@ -1,4 +1,4 @@
-import employeeInformation from "./employee-information";
+import dataInformation from "./data-information";
 export const reducers = {
-  employeeInformation
+  dataInformation,
 };

@@ -1,9 +1,11 @@
 import * as restClient from "../services/restClient";
-import { FETCH_EMPLOYEES } from "../reducers/reducer-constants";
+import { FETCH_DATA } from "../reducers/reducer-constants";
 
-const url = "https://dummy.restapiexample.com/api/v1/employees";
+//const url = "https://dummy.restapiexample.com/api/v1/employees";
 
-export function renderSteps() {
+const url = "https://jsonplaceholder.typicode.com/todos/";
+
+export function retrieveData() {
   return (dispatch) => {
     return restClient.get(url).then((json) => {
       dispatch(receiveSuccess(json));
@@ -12,7 +14,7 @@ export function renderSteps() {
 }
 function receiveSuccess(json) {
   return {
-    type: FETCH_EMPLOYEES,
+    type: FETCH_DATA,
     json,
   };
 }

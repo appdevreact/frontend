@@ -1,6 +1,6 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import EmployeeContainer from "./components/student/EmployeeContainer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import EmployeeContainer from "./components/student/DisplayContainer";
 
 import "./App.css";
 

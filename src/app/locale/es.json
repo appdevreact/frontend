@@ -2,5 +2,10 @@
     "employee-management-system": "EmployeeManagementSystem(Spanish)",
     "employee-name": "Employee(Spanish)",
     "employee-salary": "EmployeeSalary(Spanish)",
-    "employee-age": "EmployeeAge(Spanish)"
+    "employee-age": "EmployeeAge(Spanish)",
+    "id": "id(Spanish)",
+    "userId": "userId(Spanish)",
+    "title": "title(Spanish)",
+    "completed": "completed(Spanish)"
+
 }
