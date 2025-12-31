@@ -18,7 +18,7 @@
     "react-number-format": "4.0.5",
     "react-redux": "^7.0.2",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.1.1",
+    "react-scripts": "^5.0.1",
     "react-steppers": "^0.3.1",
     "reactstrap": "^8.4.1",
     "redux": "^4.0.0",
@@ -54,7 +54,7 @@
     "babel-preset-es2015-node5": "^1.1.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "browser-sync": "^2.11.0",
+    "browser-sync": "^2.29.3",
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-stylus": "^2.2.0"
