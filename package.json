@@ -55,7 +55,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "browser-sync": "^2.11.0",
-    "gulp": "^3.9.0",
+    "gulp": "^5.0.1",
     "gulp-babel": "^6.1.1",
     "gulp-stylus": "^2.2.0"
   }
